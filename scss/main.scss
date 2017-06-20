@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css?family=Arvo|Bowlby+One');
+body{
+  background-color: #d5d6d3;
+  font-family: 'Arvo', serif;
+  color: #fff;
+  text-shadow: 2px 1px #000;
+  font-size: 1.1rem;
+  a{
+    text-decoration: none;
+    color: #fff;
+  }
+  hr{
+    width: 50%;
+    background-color: #000;
+  }
+  button{
+    font-family: 'Arvo', serif;
+    border: 2px solid #fff;
+    border-radius: 2%;
+    text-transform: uppercase;
+    background-color: #20a1ad;
+
+  }
+}
+.wrapper{
+  display: flex;
+  flex-direction: column;
+}
+.overlay{
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 20;
+  position: absolute;
+}
+header{
+  position: relative;
+  background: url('../images/header.jpeg') no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  height : 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  nav{
+    height: 10%;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: rgba(0,0,0, .3);
+    .logo{
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      font-family: 'Bowlby One', cursive;
+      color: #fff;
+      text-shadow: 1px 2px #000;
+      font-size: 1.2rem;
+      letter-spacing: 10px;
+    }
+    .login{
+      flex:1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      button{
+        margin-right: 2%;
+        width: 20%;
+        height: 30px;
+      }
+    }
+  }
+  .welcome{
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+
+    h1{
+      margin-bottom: 5%;
+    }
+    button{
+      margin: 5% 0;
+      height: 30px;
+      width: 20%;
+    }
+    .optionArrow{
+      position: absolute;
+      bottom: 5%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+.fa-arrow-down{
+  margin-top: 20%;
+}
+
+main{
+  position: relative;
+  display: flex;
+  height: 100vh;
+  font-size: 1.1rem;
+  .sectionOne{
+    flex:1;
+    background: url('../images/sport.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    &:hover{
+      filter: grayscale(0);
+    }
+  }
+  .sectionTwo{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    .kids{
+      flex:1;
+      background: url('../images/kids.jpg') no-repeat;
+      background-position: 50% 50%;
+      background-size: cover;
+    }
+    .documentary{
+      flex:1;
+      background: url('../images/documentary.jpg') no-repeat;
+      background-position: 50% 50%;
+      background-size: cover;
+    }
+    .trip{
+      flex:1;
+      background: url('../images/trip.jpg') no-repeat;
+      background-position: 50% 50%;
+      background-size: cover;
+    }
+  }
+  .sectionThree{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    .series{
+      flex:1;
+      background: url('../images/series.png') no-repeat;
+      background-position: 50% 50%;
+      background-size: cover;
+    }
+    .movies{
+      flex:1;
+      background: url('../images/movies.jpg') no-repeat ;
+      background-position: center center;
+      background-size: cover;
+    }
+  }
+}
+.sectionOne,.movies,.series,.trip,.kids,.documentary{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  filter: grayscale(80%);
+  transition: all .5s ease-in-out;
+  &:hover{
+    filter: grayscale(0);
+    color: #20a1ad;
+    text-shadow: 2px 3px #000;
+  }
+  h3{
+    background-color: rgba(177, 184, 180, 0.6);
+    padding: 2%;
+  }
+}
+section{
+display: flex;
+flex-direction: column;
+height: 100vh;
+width: 100%;
+align-items: center;
+justify-content: center;
+  .titre{
+    width: 100%;
+    flex : 1 1 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .needs{
+    width: 100%;
+    flex : 1 1 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    img{
+      max-width: 150px;
+      max-height: 150px;
+    }
+  }
+  .join{
+    flex : 1 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    button{
+      margin-top: 2%;
+      height: 30px;
+      width: 20%;
+    }
+  }
+}
